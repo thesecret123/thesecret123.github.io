@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.brand span{
+   margin-left: 0;
+   font-family: 'Quicksand', sans-serif;
+   font-weight: 500;
+   font-size: 30px;
+   color: white;
+   text-decoration: none;
+}
+.brand li, a, button{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: black;
+
+}
+.brand{
+    list-style: none;
+}
+.brand li{
+    display: inline-block;
+    padding: 5px;
+}
+.brand span{
+    margin-right: 320px;
+}
+
+.brand li a:hover{
+    color: gray;
+}
+
+.brand input{
+    border-radius: 10px;
+    padding: 9px 10px;
+
+}
+.brand button{
+    padding: 9px 10px;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.brand button:hover{
+    background-color: gray;
+
+}
+
+.jumbotron{
+    height: 520px;
+    margin-top: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-image: url('back-1.jpg');
+    background-size: cover;
+    background-position-y: -100px;
+}
+.text-brand{
+    margin-left: 50px;
+    padding: 70px;
+    color: white;
+}
+.text-brand h1{
+    font-size: 50px;
+}
+.text-brand p{
+    font-size: 17px;
+    text-align: justify;
+    color: white;
+}
+.btn-referensi{
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 20px;
+    
+}
+
+
+
+.btn-referensi:hover{
+    background-color: gray;
+}
+.about{
+
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(43, 43, 43);
+    background-size: cover;
+    background-position-y: -100px;
+    column-count: 2;
+    -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-gap: 20px;
+        -moz-column-gap: 20px;
+        -webkit-column-gap: 20px;
+        border: 1px solid #ccc;
+}
+
+
+.about .gambarobjek{
+
+    width: 560px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+
+
+.gambar .title{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    
+}
+
+
+
+.about .isian h1{
+
+    font-size: 30px;
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+.about .isian p{
+    font-size: 15px;
+    text-align: justify;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+.about .isian .baca{
+    font-size: 20px;
+    text-align: justify;
+    color: blue;
+    text-decoration: none;
+}
+
+.kreasi{
+    
+    margin-top: 50px;
+    padding: 10px;
+    
+}
+.kreasi button{
+    padding: 5px;
+    color: white;
+    background: none;
+
+    border: none;
+}
+
+.kreasi button:hover{
+    background: blue;
+}
+
+.link-img{
+    text-decoration: none;
+    font-size: 20px;
+    color: navy;
+
+}
+
+.tentang{
+    height: 400px;
+
+    margin-left: 450px;
+    margin-right: 5px;
+    background-color:rgb(43, 43, 43);
+    background-size: cover;
+
+}
+
+.dalam{
+    margin-top: 0;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+.dalam h1{
+    font-size: 30px;
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+.dalam p{
+    font-size: 15px;
+    text-align: justify;
+
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+.dalam .daku{
+    font-size: 20px;
+    text-align: justify;
+    color: blue;
+    text-decoration: none;
+}
+.slide{
+    margin-top: -314px;
+    margin-left: -445px;
+    width: 443px;
+    height: 400px;
+    border: 2px solid black;
+    position: absolute;
+}
+
+
+.slide1,.slide2,.slide3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.slide1{
+    background: url(back-1.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade 8s infinite;
+    -webkit-animation: fade 8s infinite;
+}
+.slide2{
+    background: url(first.jpeg) no-repeat center;
+    background-size: cover;
+    animation: fade 8s infinite;
+    -webkit-animation: fade2 8s infinite;
+}
+.slide3{
+    background: url(second.png) no-repeat center;
+    background-size: cover;
+    animation: fade 8s infinite;
+    -webkit-animation: fade3 8s infinite;
+}
+@keyframes fade{
+    0%{opacity: 1;}
+    33.333%{opacity: 0;}
+    66.666%{opacity: 0;}
+    100%{opacity: 1;}
+
+}
+
+@keyframes fade2{
+    0%{opacity: 0;}
+    33.333%{opacity: 1;}
+    66.666%{opacity: 0;}
+    100%{opacity: 0;}
+
+}
+
+@keyframes fade3{
+    0%{opacity: 0;}
+    33.333%{opacity: 0;}
+    66.666%{opacity: 1;}
+    100%{opacity: 0;}
+
+}
+
+.kolom{
+
+    margin: 5px;
+    
+    padding: 10px;
+    
+    background-color: rgb(43, 43, 43);
+    
+    column-count: 3;
+    
+    -moz-column-count: 3;
+    
+    -webkit-column-count: 3;
+    
+    column-gap: 20px; -moz-column-gap: 20px; -webkit-column-gap: 20px; border: 1px solid #ccc;
+}
+    
+.card {
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    max-width: 500px;
+
+    
+    margin: auto;
+    
+    text-align: center; font-family: arial;
+    
+}
+    
+.price {
+    
+    color: white;
+    
+    font-size: 15px;
+
+}
+.card button {
+
+    border: none;
+    
+    outline: 0;
+    
+    padding: 5px; color: black;
+    
+    background-color: rgb(255, 255, 255);
+    
+    text-align: center; cursor: pointer;
+    
+    width: 100%;
+    
+    font-size: 18px;
+    
+}
+    
+.card button:hover { 
+    background-color: blue;
+    
+}
+
+/*Kontak Pesan*/ 
+.kontak-pesan{
+
+    margin: 5px;
+
+    padding: 10px; 
+    background-color: gray;
+
+    column-count: 2;
+
+    -moz-column-count: 2; 
+    -webkit-column-count: 2;
+
+    column-gap: 20px;
+
+    -moz-column-gap: 20px;
+
+    -webkit-column-gap: 20px;
+
+    border: 1px solid #ccc;
+
+}
+
+.form{
+
+    position: center;
+
+    margin: 10px; background-color: rgb(43, 43, 43);
+
+    padding: 40px;
+
+    width: 571px;
+
+    height: 400px;
+
+}
+
+.form .nama, .email, .hari, .pesan, .tombol{
+
+    width: 100%;
+
+    height: 40px;
+
+    padding-top: 10px;
+
+    margin-top: 10px;
+
+}
+.form .tombol{
+
+    padding: 1px 10px 10px; text-align: center;
+    
+    border-radius: 10px; text-decoration-style: bold; background-color: white;
+}
+
+.form h3{
+    
+    text-align: center; font-size: 30px;
+    
+    color: white;
+    
+}
+
+    
+.form .pesan{
+     height: 60px;
+}
+/*footer*/
+
+footer{
+
+    margin: 0px;
+
+    padding: 10px; background-color: black; 
+    -moz-column-count: 3; 
+    -webkit-column-count: 3; column-gap: 40px;
+    column-count: 3;
+    -moz-column-gap: 40px; 
+    -webkit-column-gap: 40px;
+    border: 1px solid #ccc;
+}
+
+
+
+footer p{
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify;
+    font-size: 18px; color: white;
+} 
+footer ul li{
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    list-style: none;
+
+}
+footer ul li:hover{
+    background-color: gray;
+}
+footer button{
+    padding: 5px;
+    color: white;
+    background: none;
+
+    border: none;
+}
+footer button:hover{
+    background-color: blue;
+}
